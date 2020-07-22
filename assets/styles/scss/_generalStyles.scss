@@ -1,0 +1,33 @@
+.wrapper {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+ul,
+p,
+a {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    font-family: $mainHeaderFont;
+    color: $bodyTextColor;
+}
+
+h2,
+h3,
+h4 {
+    font-family: $bodyFont;
+    color: $bodyTextColor;
+}
+
