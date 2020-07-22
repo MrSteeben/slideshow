@@ -21,6 +21,7 @@ img {
 
 h1 {
     font-family: $mainHeaderFont;
+    font-size: 3.5rem;
     color: $bodyTextColor;
 }
 
@@ -29,6 +30,14 @@ h3,
 h4 {
     font-family: $bodyFont;
     color: $bodyTextColor;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+h4 {
+    font-size: 1.1rem;
 }
 
 body {
