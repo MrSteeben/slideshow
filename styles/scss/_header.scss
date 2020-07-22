@@ -1,4 +1,9 @@
-header {
+.headerFlex {
     display: flex;
-    
+    justify-content: center;
+    align-items: center;
+    .mainHeader {
+        border-right: 3px solid $iconColor;
+        padding-right: 15px;
+    }
 }
