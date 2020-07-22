@@ -262,6 +262,10 @@ a {
   padding: 0;
 }
 
+ul {
+  list-style: none;
+}
+
 img {
   width: 100%;
 }
@@ -289,4 +293,12 @@ h4 {
 
 body {
   background-color: #EFEFEF;
+}
+
+button {
+  width: 160px;
+  height: 45px;
+  background: #434343;
+  color: #fff;
+  font-size: 1.6rem;
 }
