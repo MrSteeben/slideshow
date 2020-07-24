@@ -1,16 +1,16 @@
 Photo credits
+`````````````
 
+LANDMARKS
+`````````
 statue-of-liberty-newyork.jpg - 
 Photo by Daniel Bendig from Pexels
-
 
 eiffel-tower-paris.jpg
 Photo by DEDN from Pexels
 
-
 sydney-opera-house-australia.jpg
 Photo by Mudassir Ali from Pexels
-
 
 cn-tower-toronto.jpg
 Photo by Skitterphoto from Pexels
@@ -20,4 +20,75 @@ Photo by Sudipta Mondal from Pexels
 
 colosseum-rome-italy.jpg
 Photo by Davi Pimentel from Pexels
+
+great-wall-of-china.jpg
+Photo by Alex Qian from Pexels
+
+christ-the-redeemer-brazil.jpg
+Photo by 4FLY RJ from Pexels
+
+machu-picchu-peru.jpg
+Photo by Amanda Kerr from Pexels
+
+
+CITIES
+``````
+
+tokyo-city.jpg
+Photo by Negative Space from Pexels
+
+san-francisco-city.jpg
+Photo by picjumbo.com from Pexels
+
+new-york-city.jpg
+Photo by Quintin Gellar from Pexels
+
+hong-kong-city.jpg
+Photo by Jimmy Chan from Pexels
+
+moscow-city.jpg
+Photo by Алексей Васильев from Pexels
+
+toronto-city.jpg
+Photo by Harrison Haines from Pexels
+
+chicago-city.jpg
+Photo by Cameron Casey from Pexels
+
+london-city.jpg
+Photo by Dominika Gregušová from Pexels
+
+berlin-city.jpg
+Photo by Niki Nagy from Pexels
+
+
+NATURE
+``````
+
+black-bridge.jpg
+Photo by Kaique Rocha from Pexels
+
+grey-cliff-beside-ocean.jpg
+Photo by Simon Clayton from Pexels
+
+grassland.jpg
+Photo by JACK REDGATE from Pexels
+
+aurora-borealis.jpg
+Photo by Tobias Bjørkli from Pexels
+
+mountains.jpg
+Photo by Trace Hudson from Pexels
+
+deer.jpg
+Photo by Louis from Pexels
+
+palm-tree.jpg
+Photo by Alex Azabache from Pexels
+
+dolphins.jpg
+Photo by Jeremy Bishop from Pexels
+
+leaves.jpg
+Photo by Pixabay from Pexels
 
