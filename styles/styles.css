@@ -268,6 +268,8 @@ ul {
 
 img {
   width: 100%;
+  height: auto;
+  display: block;
 }
 
 h1 {
@@ -309,15 +311,52 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 600px;
+          flex: 0 0 600px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.headerFlex .mainHeader {
-  border-right: 3px solid #333;
-  padding-right: 15px;
+.flexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.imageContainer {
+  margin: 2%;
+  width: calc((100%/3) - 4%);
+}
+
+/*********************/
+/* media query styles */
+/*********************/
+@media (max-width: 750px) {
+  .wrapper {
+    width: 95%;
+  }
+  .imageContainer {
+    width: calc((100%/2) - 4%);
+  }
+}
+
+@media (max-width: 420px) {
+  .imageContainer {
+    width: calc(100% - 4%);
+  }
+  h1 {
+    font-size: 2.8rem;
+  }
 }

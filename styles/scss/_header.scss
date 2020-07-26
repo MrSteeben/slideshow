@@ -1,9 +1,11 @@
 .headerFlex {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    flex: 0 0 600px;
+    justify-content: space-evenly;
     align-items: center;
-    .mainHeader {
-        border-right: 3px solid $iconColor;
-        padding-right: 15px;
-    }
+    // .mainHeader {
+    //     padding-right: 15px;
+        
+    // }
 }
