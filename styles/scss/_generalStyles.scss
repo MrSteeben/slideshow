@@ -61,4 +61,8 @@ button {
     color: #fff;
     font-size: 1.6rem;
     border: 0;
+    transition: background-color 0.3s ease;
+    &:hover, &:focus {
+        background: $buttonHoverColor;
+    }
 }

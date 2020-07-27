@@ -305,6 +305,12 @@ button {
   color: #fff;
   font-size: 1.6rem;
   border: 0;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+button:hover, button:focus {
+  background: #FF2D0E;
 }
 
 .headerFlex {
