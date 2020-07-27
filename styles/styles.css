@@ -251,6 +251,12 @@ html {
   margin: 0 auto;
 }
 
+html,
+body {
+  height: 100%;
+  position: relative;
+}
+
 h1,
 h2,
 h3,
@@ -322,13 +328,15 @@ p {
 a {
   text-decoration: none;
   color: #fff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 a:hover, a:focus {
   color: #FF2D0E;
 }
 
-.headerFlex {
+header .headerFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -343,6 +351,11 @@ a:hover, a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+header h1 {
+  border-bottom: 4px solid #FF2D0E;
+  margin-bottom: 15px;
 }
 
 .flexContainer {
@@ -361,13 +374,23 @@ a:hover, a:focus {
   width: calc((100%/3) - 4%);
 }
 
+.mainContainer {
+  min-height: 100vh;
+  overflow: hidden;
+  display: block;
+  position: relative;
+  padding-bottom: 100px;
+}
+
+.mainContainer footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
 footer {
   background-color: #434343;
   text-align: center;
-  position: -webkit-sticky;
-  position: sticky;
-  bottom: 0;
-  width: 100%;
 }
 
 /*********************/

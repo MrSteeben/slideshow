@@ -7,6 +7,12 @@
     margin: 0 auto;
 }
 
+html,
+body {
+    height: 100%;
+    position: relative;
+}
+
 h1,
 h2,
 h3,
@@ -76,6 +82,7 @@ p {
 a {
     text-decoration: none;
     color: #fff;
+    transition: all 0.3s ease;
     &:hover, &:focus {
         color: $buttonHoverColor;
     }
