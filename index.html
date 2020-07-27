@@ -10,75 +10,46 @@
 </head>
 <body>
     <div class="mainContainer">
-    <a href="#mainContent" class="skip-link">Skip to main content.</a>
+        <!-- Skip Link Accessibility Link -->
+        <a href="#mainContent" class="skip-link">Skip to main content.</a>
 
-    <header>
-        
-        <div class="wrapper headerFlex">
-            <div class="mainHeader">
-                <h1>Load.Slideshow</h1>
+        <!-- BEGIN header -->
+        <header>
+            <div class="wrapper headerFlex">
+                <div class="mainHeader">
+                    <h1>Load.Slideshow</h1>
+                </div>
+                <div>
+                    <ul class="imageCategories">
+                        <li><button id="landmarks">landmarks</button></li>
+                        <li><button id="cities">cities</button></li>
+                        <li><button id="nature">nature</button></li>
+                    </ul>
+                </div>
             </div>
-            <div>
-                <ul class="imageCategories">
-                    <li><button id="landmarks">landmarks</button></li>
-                    <li><button id="cities">cities</button></li>
-                    <li><button id="nature">nature</button></li>
-                </ul>
-            </div>
-        </div>
-    </header>
+        </header>
+        <!-- END header -->
+        <!-- BEGIN main -->
+        <main id="mainContent">
+            <section>
+                <div class="wrapper">
+                    <ul class="flexContainer photoContainer">
 
-    <main id="mainContent">
-        <section>
-            <div class="wrapper">
-                <ul class="flexContainer photoContainer">
+                        <!-- script loads images here -->
 
-                    <!-- Images loaded here -->
-
-                    <!-- <li class="imageContainer">
-                        <img src="assets/images/cities/tokyo-city.jpg" alt="">
-                        <h2>Tokyo, Japan</h2>
-                    </li>
-
-                    <li class="imageContainer">
-                        <img src="assets/images/cities/toronto-city.jpg" alt="">
-                        <h2>Toronto, Canada</h2>
-                    </li>
-                    <li class="imageContainer">
-                        <img src="assets/images/cities/san-francisco-city.jpg">
-                        <h2>San Francisco, USA</h2>
-                    </li>
-                    <li class="imageContainer">
-                        <img src="assets/images/cities/new-york-city.jpg" alt="">
-                        <h2>New York City, USA</h2>
-                    </li>
-                    <li class="imageContainer">
-                        <img src="assets/images/cities/moscow-city.jpg" alt="">
-                        <h2>Moscow, Russia</h2>
-                    </li>
-                    <li class="imageContainer">
-                        <img src="assets/images/cities/london-city.jpg" alt="">
-                    </li>
-                    <li class="imageContainer">
-                        <img src="assets/images/cities/hong-kong-city.jpg" alt="">
-                    </li>
-                    <li class="imageContainer">
-                        <img src="assets/images/cities/chicago-city.jpg" alt="">
-                    </li>
-                    <li class="imageContainer">
-                        <img src="assets/images/cities/berlin-city.jpg" alt="">
-                    </li> -->
-                </ul>
-            </div>
-        </section>    
-    </main>
-
-    <footer>
-        <p>Made by Stephen McMullin @ <a href="http://junocollege.com">Juno College</a></p>
-    </footer>
-
-    <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
-    <script src="assets/scripts/script.js"></script>
-</div> <!-- end main container -->
+                    </ul>
+                </div>
+            </section>    
+        </main>
+        <!-- END main-->
+        <!-- BEGIN footer -->
+        <footer>
+            <p>Made by Stephen McMullin @ <a href="http://junocollege.com">Juno College</a></p>
+        </footer>
+        <!-- END footer -->
+        <!-- Site scripts loaded -->
+        <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
+        <script src="assets/scripts/script.js"></script>
+    </div> <!-- end main container -->
 </body>
 </html>

@@ -7,11 +7,10 @@ $(function() {
 })
 
 slideshowApp.init = function() {
-    console.log("hello i work");
     slideshowApp.showPhotos();
-    
 }
-// Populate three objects with image information for each category
+
+// Populate bjects with image information for each category
 const landmarkSection = [
     {
         landmark: 'Christ the Redeemer',
@@ -146,13 +145,15 @@ const natureSection = [
         url: 'assets/images/nature/palm-tree.jpg'
     }
 ]
-// Add an event listener on buttons and get selected button category
+// Add an event listener on buttons and get selected button category and output images
 
 slideshowApp.showPhotos = function() {
-    $('#landmarks').on('click', function(e){
-        e.preventDefault();
-        // console.log(landmarkSection);
+    // Landmarks section
+    $('#landmarks').on('click', function(){
+        // Empty the page of any content
         $('.photoContainer').empty();
+        
+        // Loop through the array and store object properties into variables
         landmarkSection.forEach((item) => {
             const listItem = $('<li>');
             const image = $('<img>').attr('src', item.url);
@@ -160,44 +161,48 @@ slideshowApp.showPhotos = function() {
             const city = $('<h4>').text(item.city);
             const country = $('<h4>').text(item.country);
 
+            // Add items to the page
             listItem.append(image, landmarkName, city, country).addClass('imageContainer');
             
             $('.photoContainer').append(listItem);
         })
     })
 
-    $('#cities').on('click', function(e){
-        e.preventDefault();
-        console.log(citiesSection);
+    // Cities section
+    $('#cities').on('click', function(){
+        // Empty the page of any content
         $('.photoContainer').empty();
+
+        // Loop through the array and store object properties into variables
         citiesSection.forEach((item) => {
-            // console.log(item.country);
             const listItem = $('<li>');
             const image = $('<img>').attr('src', item.url);
             const city = $('<h3>').text(item.city);
             const country = $('<h4>').text(item.country);
 
+            // Add items to the page
             listItem.append(image, city, country).addClass('imageContainer');
             
             $('.photoContainer').append(listItem);
         })
     })
 
-    $('#nature').on('click', function(e){
-        e.preventDefault();
+    // Nature section
+    $('#nature').on('click', function(){
+        // Empty the page of any content
         $('.photoContainer').empty();
+
+        // Loop through the array and store object properties into variables
         natureSection.forEach((item) => {
-            // console.log(item.url);
             const listItem = $('<li>');
             const image = $('<img>').attr('src', item.url);
 
+            // Add items to the page
             listItem.append(image).addClass('imageContainer');
+
             $('.photoContainer').append(listItem);
         })
     })
 }
-
-// prevent default on button
-// load contents of selected object onto page
 
 
