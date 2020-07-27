@@ -152,24 +152,47 @@ slideshowApp.showPhotos = function() {
     $('#landmarks').on('click', function(e){
         e.preventDefault();
         // console.log(landmarkSection);
-        
+        $('.photoContainer').empty();
         landmarkSection.forEach((item) => {
-            console.log(item.url);
+            const listItem = $('<li>');
+            const image = $('<img>').attr('src', item.url);
+            const landmarkName = $('<h3>').text(item.landmark);
+            const city = $('<h4>').text(item.city);
+            const country = $('<h4>').text(item.country);
+
+            listItem.append(image, landmarkName, city, country).addClass('imageContainer');
+            
+            $('.photoContainer').append(listItem);
         })
     })
 
     $('#cities').on('click', function(e){
         e.preventDefault();
         console.log(citiesSection);
+        $('.photoContainer').empty();
         citiesSection.forEach((item) => {
-            console.log(item.country);
+            // console.log(item.country);
+            const listItem = $('<li>');
+            const image = $('<img>').attr('src', item.url);
+            const city = $('<h3>').text(item.city);
+            const country = $('<h4>').text(item.country);
+
+            listItem.append(image, city, country).addClass('imageContainer');
+            
+            $('.photoContainer').append(listItem);
         })
     })
 
     $('#nature').on('click', function(e){
         e.preventDefault();
+        $('.photoContainer').empty();
         natureSection.forEach((item) => {
-            console.log(item.url);
+            // console.log(item.url);
+            const listItem = $('<li>');
+            const image = $('<img>').attr('src', item.url);
+
+            listItem.append(image).addClass('imageContainer');
+            $('.photoContainer').append(listItem);
         })
     })
 }
