@@ -6,9 +6,24 @@
 .imageContainer {
 	margin: 2%;
     width: calc((100%/3) - 4%);
-    padding-bottom: 40px;
+    padding-bottom: 4rem;
+    border: 0.5rem solid black;
+    border-radius: 1.5rem;
+    background-color: $footerColor;
+    h3 {
+        padding: 1.5rem;
+    }
+
+    h4 {
+        padding-left: 1.5rem;
+    }
 }
 
+.imageBoxStyle img {
+    border-radius: 1rem;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
 .mainContainer {
     min-height: 100vh;
     overflow: hidden;

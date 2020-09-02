@@ -1,15 +1,49 @@
 header {
+    min-height: 40vh;
     .headerFlex {
-    display: flex;
-    flex-wrap: wrap;
-    flex: 0 0 600px;
-    justify-content: space-evenly;
-    align-items: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        
+        @-webkit-keyframes border {
+            from {width: 0px;}
+            to {width:30%}
+        }
+
+        .mainHeader:after {
+            content: '';
+            display: block;
+            margin: auto;
+            height: 3px;
+            width: 0px;
+            background: $buttonHoverColor;
+            -webkit-animation-name: border; /* Safari 4.0 - 8.0 */
+            -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+            -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+            animation-name: border;
+            animation-duration: 1s;
+            animation-delay: 2s;
+            animation-fill-mode: forwards;
+        }
+
+        .imageCategories {
+            li {
+                display: inline-block;
+            }
+        }
+    }
+
+    p {
+        margin: 3rem 0;
     }
     h1 {
-        border-bottom: 4px solid $buttonHoverColor;
-        margin-bottom: 15px;
+        margin: 5rem 0 0 0;
     }
+
+    button {
+        margin-bottom: 3rem;
+    }
+
 }
 
 

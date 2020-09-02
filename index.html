@@ -6,21 +6,23 @@
     <title>Load.Slideshow by Stephen McMullin</title>
     <link href="https://fonts.googleapis.com/css2?family=Archivo&family=Open+Sans&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/6eb9b72fe3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
     <div class="mainContainer">
         <!-- Skip Link Accessibility Link -->
-        <a href="#mainContent" class="skip-link">Skip to main content.</a>
+        <a href="#mainContent" class="skipLink">Skip to main content.</a>
 
         <!-- BEGIN header -->
         <header>
             <div class="wrapper headerFlex">
                 <div class="mainHeader">
-                    <h1>Load.Slideshow</h1>
+                    <h1>Load Slideshow</h1>
                 </div>
                 <div>
-                    <ul class="imageCategories">
+                    <p>Click a category below to reveal a slideshow!</p>
+                    <ul class="imageCategories" data-aos="fade-up">
                         <li><button id="landmarks">landmarks</button></li>
                         <li><button id="cities">cities</button></li>
                         <li><button id="nature">nature</button></li>
@@ -47,9 +49,16 @@
             <p>Made by Stephen McMullin @ <a href="http://junocollege.com">Juno College</a></p>
         </footer>
         <!-- END footer -->
-        <!-- Site scripts loaded -->
-        <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
-        <script src="assets/scripts/script.js"></script>
     </div> <!-- end main container -->
+    
+    <!-- Site scripts loaded -->
+    <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
+    <script src="assets/scripts/script.js"></script>
+    <!-- LOAD AOS (animate on scroll) script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- INITIALIZE AOS script -->
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

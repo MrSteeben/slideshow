@@ -226,7 +226,15 @@ html {
   overflow: hidden;
 }
 
-.skip-link {
+/* Font Variables */
+/* Color Variables */
+.wrapper {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.skipLink {
   position: absolute;
   left: -1000px;
   top: 5px;
@@ -235,20 +243,12 @@ html {
   color: black;
 }
 
-.skip-link:focus {
+.skipLink:focus {
   left: 0;
 }
 
 html {
   font-size: 62.5%;
-}
-
-/* Font Variables */
-/* Color Variables */
-.wrapper {
-  max-width: 1200px;
-  width: 90%;
-  margin: 0 auto;
 }
 
 html,
@@ -272,9 +272,9 @@ ul {
   list-style: none;
 }
 
-img {
+.imageBoxStyle img {
   width: 100%;
-  height: 100%;
+  height: 30rem;
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
@@ -288,7 +288,6 @@ h1 {
 }
 
 p,
-h2,
 h3,
 h4 {
   font-family: "Open Sans", "Arial", sans-serif;
@@ -303,6 +302,12 @@ h4 {
   font-size: 1.4rem;
 }
 
+h3,
+h4 {
+  color: #fff;
+  font-weight: 300;
+}
+
 body {
   background-color: #EFEFEF;
 }
@@ -314,12 +319,16 @@ button {
   color: #fff;
   font-size: 1.6rem;
   border: 0;
-  -webkit-transition: background-color 0.3s ease;
-  transition: background-color 0.3s ease;
+  margin-right: 1rem;
+  border-radius: 0.5rem;
+  -webkit-transition: background-color 0.4s ease-in-out;
+  transition: background-color 0.4s ease-in-out;
 }
 
 button:hover, button:focus {
-  background: #FF2D0E;
+  -webkit-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+  background-color: #FF2D0E;
 }
 
 p {
@@ -330,34 +339,79 @@ p {
 a {
   text-decoration: none;
   color: #fff;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
 }
 
 a:hover, a:focus {
+  -webkit-transition: color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
   color: #FF2D0E;
 }
 
+p {
+  color: #333;
+}
+
+header {
+  min-height: 40vh;
+}
+
 header .headerFlex {
+  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 600px;
-          flex: 0 0 600px;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@-webkit-keyframes border {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 30%;
+  }
+}
+
+header .headerFlex .mainHeader:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0px;
+  background: #FF2D0E;
+  -webkit-animation-name: border;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-fill-mode: forwards;
+  /* Safari 4.0 - 8.0 */
+  animation-name: border;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+header .headerFlex .imageCategories li {
+  display: inline-block;
+}
+
+header p {
+  margin: 3rem 0;
 }
 
 header h1 {
-  border-bottom: 4px solid #FF2D0E;
-  margin-bottom: 15px;
+  margin: 5rem 0 0 0;
+}
+
+header button {
+  margin-bottom: 3rem;
 }
 
 .flexContainer {
@@ -374,7 +428,24 @@ header h1 {
 .imageContainer {
   margin: 2%;
   width: calc((100%/3) - 4%);
-  padding-bottom: 40px;
+  padding-bottom: 4rem;
+  border: 0.5rem solid black;
+  border-radius: 1.5rem;
+  background-color: #434343;
+}
+
+.imageContainer h3 {
+  padding: 1.5rem;
+}
+
+.imageContainer h4 {
+  padding-left: 1.5rem;
+}
+
+.imageBoxStyle img {
+  border-radius: 1rem;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .mainContainer {
@@ -394,6 +465,10 @@ header h1 {
 footer {
   background-color: #434343;
   text-align: center;
+}
+
+footer p {
+  color: #fff;
 }
 
 @media (max-width: 750px) {

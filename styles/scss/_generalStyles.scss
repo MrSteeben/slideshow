@@ -7,6 +7,24 @@
     margin: 0 auto;
 }
 
+
+.skipLink {
+    position: absolute;
+    left: -1000px;
+    top: 5px;
+    z-index: 999;
+    background: white;
+    color: black;
+}
+
+.skipLink:focus {
+    left: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
 html,
 body {
     height: 100%;
@@ -28,9 +46,9 @@ ul {
     list-style: none;
 }
 
-img {
+.imageBoxStyle img {
     width: 100%;
-    height: 100%;
+    height: 30rem;
     display: block;
     object-fit: cover;
 }
@@ -43,7 +61,6 @@ h1 {
 }
 
 p,
-h2,
 h3,
 h4 {
     font-family: $bodyFont;
@@ -58,6 +75,11 @@ h4 {
     font-size: 1.4rem;
 }
 
+h3,
+h4 {
+    color: $footerTextColor;
+    font-weight: 300;
+}
 body {
     background-color: $backgroundColor;
 }
@@ -69,9 +91,13 @@ button {
     color: #fff;
     font-size: 1.6rem;
     border: 0;
-    transition: background-color 0.3s ease;
-    &:hover, &:focus {
-        background: $buttonHoverColor;
+    margin-right: 1rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.4s ease-in-out;
+    &:hover, 
+    &:focus {
+        transition: background-color 0.5s ease-in-out;
+        background-color: $buttonHoverColor;
     }
 }
 
@@ -83,8 +109,15 @@ p {
 a {
     text-decoration: none;
     color: #fff;
-    transition: all 0.3s ease;
-    &:hover, &:focus {
+    transition: color 0.4s ease-in-out;
+
+    &:hover, 
+    &:focus {
+        transition: color 0.4s ease-in-out;
         color: $buttonHoverColor;
     }
+}
+
+p {
+    color: $bodyTextColor;
 }
