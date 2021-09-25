@@ -1,0 +1,90 @@
+// Debugging style
+// * { border: 1px solid red; }
+
+.wrapper {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+html,
+body {
+    height: 100%;
+    position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+ul,
+p,
+a {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+h1 {
+    font-family: $mainHeaderFont;
+    font-size: 3.5rem;
+    color: $bodyTextColor;
+    text-transform: uppercase;
+}
+
+p,
+h2,
+h3,
+h4 {
+    font-family: $bodyFont;
+    color: $bodyTextColor;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+h4 {
+    font-size: 1.4rem;
+}
+
+body {
+    background-color: $backgroundColor;
+}
+
+button {
+    width: 160px;
+    height: 45px;
+    background: $footerColor;
+    color: #fff;
+    font-size: 1.6rem;
+    border: 0;
+    transition: background-color 0.3s ease;
+    &:hover, &:focus {
+        background: $buttonHoverColor;
+    }
+}
+
+p {
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+    &:hover, &:focus {
+        color: $buttonHoverColor;
+    }
+}

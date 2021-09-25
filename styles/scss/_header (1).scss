@@ -1,0 +1,15 @@
+header {
+    .headerFlex {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 600px;
+    justify-content: space-evenly;
+    align-items: center;
+    }
+    h1 {
+        border-bottom: 4px solid $buttonHoverColor;
+        margin-bottom: 15px;
+    }
+}
+
+

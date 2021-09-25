@@ -1,0 +1,23 @@
+.flexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.imageContainer {
+	margin: 2%;
+    width: calc((100%/3) - 4%);
+    padding-bottom: 40px;
+}
+
+.mainContainer {
+    min-height: 100vh;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 100px;
+    footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+}
